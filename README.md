@@ -1,7 +1,7 @@
 # ApexPlanet-task2
 # TaskFlow Hub 📋
 
-A responsive web app with Contact Form and To-Do List using HTML, CSS, and JavaScript.
+A responsive web app with Contact Form and To-Do List using HTML, CSS and JavaScript.
 
 ## Features
 
