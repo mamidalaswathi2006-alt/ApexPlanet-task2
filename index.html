@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">TaskFlow Hub</div>
+
+    <nav>
+        <a href="#" onclick="showSection('contact')">Contact Form</a>
+        <a href="#" onclick="showSection('todo')">To-Do List</a>
+    </nav>
+</header>
+
+<!-- CONTACT FORM -->
+
+<section id="contact" class="section active">
+
+    <div class="card">
+
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email">
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Enter Your Message"></textarea>
+
+            <button type="submit">
+                Submit
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- TODO LIST -->
+
+<section id="todo" class="section">
+
+    <div class="card">
+
+        <h2>To-Do List</h2>
+
+        <div class="todo-box">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a Task">
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 TaskFlow Hub. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
